@@ -1,0 +1,246 @@
+/* .calculator{
+  margin: auto;
+  width: 23%;
+}
+
+.display{
+  text-align: right;
+  height: 50px;
+  margin: auto;
+  margin-top: 5px;
+  padding: 3px;
+  border: 1px solid black;
+}
+
+#history{
+  font-size: 0.9em;
+  color: #919191;
+}
+
+#result{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.numbers-keys{
+  display: grid;
+  grid-template-columns: 75px 75px 75px 75px;
+  grid-template-rows: 70px 70px 70px 70px 70px;
+  padding: 5px;
+}
+
+.number-key, .zero-key, .decimal-key, .equal-key, .operation-key, .clear-key{
+  text-align: center;
+  font-size: 2em;
+  background-color: #F0F8FF;
+  color: #708090;
+  cursor: pointer;
+  border: 1px solid #708090;
+  padding: 20px;
+  outline: none;
+}
+
+.number-key:hover, .zero-key:hover, .decimal-key:hover, .equal-key, .operation-key, .clear-key{
+  background-color: #708090;
+  color: #F0F8FF;
+}
+
+#equal{
+  background-color: #708090;
+  width: 300px;
+  color: #F0F8FF;
+}
+
+#equal:hover{
+  opacity: 0.8;
+}
+
+
+#clear{
+  background-color: #CD5C5C;
+  color: #F0F8FF;
+}
+
+#clear:hover{
+  opacity: 0.8;
+}
+
+#division{
+  background-color: #F0F8FF;
+  color: #708090;
+}
+
+#division:hover{
+  background-color: #708090;
+  color: #F0F8FF;
+}
+
+#multiplication{
+  background-color: #F0F8FF;
+  color: #708090;
+}
+
+#multiplication:hover{
+  background-color: #708090;
+  color: #F0F8FF;
+}
+
+#substraction{
+  background-color: #F0F8FF;
+  color: #708090;
+}
+
+#substraction:hover{
+  background-color: #708090;
+  color: #F0F8FF;
+}
+
+#addition{
+  background-color: #F0F8FF;
+  color: #708090;
+}
+
+#addition:hover{
+  background-color: #708090;
+  color: #F0F8FF;
+} */
+
+/* +++++++++ STYLING OF ALL BUTTONS ++++++++++++++++++++ */
+.calc-btn{
+  background-color: silver;
+  color: #1c1c1c;
+  width: 75px;
+  height: 75px;
+  border: 1px solid #1c1c1c;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.5em;
+  padding-top: 3px;
+  outline: none;
+}
+
+.calc-btn:hover{
+  background-color: #708090;
+  color: white;
+}
+/* ++++++++++++++++ END STYLING +++++++++++++++++++++++++ */
+
+/* +++++++++ STYLING OF DIV ROWS CLASS ++++++++++++++++++++ */
+.row{
+  display: table;
+  table-layout: fixed;
+  width: 300px;
+  margin: auto;
+}
+/* ++++++++++++++++ END STYLING +++++++++++++++++++++++++ */
+
+/* +++++++++ STYLING OF COLUMNS CLASS ++++++++++++++++++++ */
+.column{
+  display: table-cell;
+  border: 1px solid #1c1c1c;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+/* ++++++++++++++++ END STYLING +++++++++++++++++++++++++ */
+
+/* +++++++++ STYLING OF EQUAL BUTTON ID ++++++++++++++++++++ */
+#equal{
+  width: 300px;
+  border-radius: 0 0 7px 7px;
+  background-color: #708090;
+  color: #F0F8FF;
+}
+
+#equal:hover{
+  background-color: silver;
+  color: #1c1c1c;
+}
+/* ++++++++++++++++ END STYLING +++++++++++++++++++++++++ */
+
+/* +++++++++ STYLING OF RESULT BUTTON ID WHICH DISPLAY RESULTS ++++++++++++++++++++ */
+#result{
+  width: 300px;
+  height: 65px;
+  background-color:#F0F8FF;
+  text-align: right;
+  border: 1px solid #1c1c1c;
+  border-top: 1px solid #1c1c1c;
+  border-left: 1px solid #1c1c1c;
+  padding: 10px;
+  border-radius: 7px 7px 0 0;
+  font-size: 1.5em;
+  margin-bottom: 0px;
+  color: #1c1c1c;
+  cursor: text;
+  outline: none;
+}
+/* ++++++++++++++++ END STYLING +++++++++++++++++++++++++ */
+
+/* +++++++++ STYLING OF CLEAR BUTTON ID ++++++++++++++++++++ */
+#clear{
+  background-color: #CD5C5C;
+  color: #F0F8FF;
+}
+
+#clear:hover{
+  opacity: 0.8;
+}
+/* ++++++++++++++++ END STYLING +++++++++++++++++++++++++ */
+
+/* +++++++++ STYLING OF DECIMAL BUTTON ID ++++++++++++++++++++ */
+#decimal{
+  background-color: #708090;
+  color: #F0F8FF;
+}
+
+#decimal:hover{
+  background-color: silver;
+  color: #1c1c1c;
+}
+/* ++++++++++++++++ END STYLING +++++++++++++++++++++++++ */
+
+/* +++++++++ STYLING OF OPERATIONS BUTTONS ID ++++++++++++++++++++ */
+#division{
+  background-color: #708090;
+  color: #F0F8FF;
+}
+
+#division:hover{
+  background-color: silver;
+  color: #1c1c1c;
+}
+
+#multiplication{
+  background-color: #708090;
+  color: #F0F8FF;
+}
+
+#multiplication:hover{
+  background-color: silver;
+  color: #1c1c1c;
+}
+
+#substraction{
+  background-color: #708090;
+  color: #F0F8FF;
+}
+
+#substraction:hover{
+  background-color: silver;
+  color: #1c1c1c;
+}
+
+#addition{
+  background-color: #708090;
+  color: #F0F8FF;
+}
+
+#addition:hover{
+  background-color: silver;
+  color: #1c1c1c;
+}
+/* ++++++++++++++++ END STYLING +++++++++++++++++++++++++ */
